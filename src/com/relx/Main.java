@@ -5,12 +5,13 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
+        int r = 0;
+        r = minDistance("Fast","Last");
 
-
-        System.out.println("First Idea");
+        System.out.println("Distance = "+r);
     }
 
-    public int minDistance(String word1, String word2) {
+    public static int minDistance(String word1, String word2) {
         int m=word1.length();
         int n=word2.length();
         int[][] mem = new int[m][n];
@@ -19,7 +20,7 @@ public class Main {
         }
         return calDistance(word1, word2, mem, m-1, n-1);
     }
-    private int calDistance(String word1, String word2, int[][] mem, int i, int j) {
+    private static int calDistance(String word1, String word2, int[][] mem, int i, int j) {
         if (i < 0) {
             return j + 1;
         } else if (j < 0) {
