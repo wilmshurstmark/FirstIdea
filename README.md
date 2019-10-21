@@ -7,6 +7,6 @@ These differences can either be additional, replacement or deleted characters be
 
 It uses recursion, so might not be that fast if scaled up.
 
-Some code ideas have been borrowed from the great www.
+Some code ideas have been borrowed from the great world wide web.
 
 
